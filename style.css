@@ -1,0 +1,140 @@
+*{
+    font-family: 'Poppins', sans-serif;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+}.container {
+   
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
+   
+   
+
+}
+div.loginHeader{
+    text-align: center;
+}div.loginHeader h1{
+    font-size: 60px;
+    color: rgb(134, 158, 143);
+    padding: 0px;
+    margin: 0px;
+
+}
+div.loginHeader p{
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+    border-bottom: 5px solid #002306;
+    margin: 0px;
+    text-transform:uppercase;
+    display:inline-block;
+}
+div.loginHeader p:after{
+    content:'';
+    display: block;
+    height: 5px;
+    background: #01480e;
+    margin: 0 auto;
+}
+.wrapper {
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+  
+}
+
+.input-field{
+    position: relative;
+
+}
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    background: transparent;
+    margin: 1% 0;
+    width: 280px;
+    height: 2px;
+    padding:  30px 0;
+    border: 1px solid rgba(2, 63, 8, 0.6);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+   
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: scale(0.8) translate(-100%, -100%);
+    right: 50px;
+    color: rgb(14, 13, 13)
+    
+
+}
+input::placeholder{
+    color: rgb(6, 6, 6);
+}
+.input-field input[type="email"]:focus::placeholder,
+.input-field input[type="password"]:focus::placeholder{
+    transform: scale(0.5) translate(-100%, -100%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 15px;
+   
+}
+input[type="submit"] {
+    color: rgb(251, 246, 246); 
+    background-color: #2c3c2c;
+    cursor: pointer;
+    padding: 10px 40px 10px;
+    transition: all 1s ease-out;
+    margin: 15px auto; /* Set margin to auto to center horizontally */
+    width: auto; /* Remove fixed width */
+    height: auto; /* Remove fixed height */
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center; /* Center align text */
+    display: block; /* Ensure it behaves as a block element */
+}
+input[type="submit"]:hover {
+    transform: scale(1.10);
+}
+input[type="submit"]:active {
+    transform: scale(0.9);
+}	
+
+
+
+a.sign-up {
+    text-decoration: underline;
+    color: rgba(11, 3, 251, 0.942);
+
+}
+a.sign-up:hover{
+    text-decoration: underline;
+    color: #030303fd;
+}
+.wrapper.login:hover{
+    background: #01480e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+}
+
